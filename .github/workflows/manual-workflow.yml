@@ -1,13 +1,11 @@
-```yaml
-   name: "Manual Hello World"
- 
-    on:
-      workflow_dispatch:
+name: "Manual Hello World"
 
-    jobs:
-      say-hello:
-        runs-on: ubuntu-latest
-        steps:
-          - name: "Say Hello"
-            run: echo "Hello, Actions! The time is $(date)."
-    ```
+on:
+  workflow_dispatch:
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say Hello"
+      run: echo "Hello, Actions! The time is $(date)."
