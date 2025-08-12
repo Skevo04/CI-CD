@@ -1,5 +1,6 @@
-  name: "Manual Hello World"
-
+```yaml
+   name: "Manual Hello World"
+ 
     on:
       workflow_dispatch:
 
@@ -9,3 +10,4 @@
         steps:
           - name: "Say Hello"
             run: echo "Hello, Actions! The time is $(date)."
+    ```
